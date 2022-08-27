@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top h1{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.top p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.pads{
+    background: cyan;
+    width: 100%;
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.pads>div{
+    height: 100%;
+flex:1;
+}
+.pad1{
+    background-color: rgb(41, 206, 49);
+}
+.pad2{
+    background-color: darkkhaki;
+}
+.pad3{
+    background-color: lightcoral;
+}
+.pad4{
+    background-color: lightgoldenrodyellow;
+}
+.pad5{
+    background-color: lightseagreen;
+}
+
+.visuals >div{
+    position: absolute;
+     height: 50px;
+     width: 50px;
+     border: none;
+     border-radius: 50%;
+     bottom: 0%;
+     left: 20%;
+     bottom: 0%;
+     z-index: -1;
+}
+
+@keyframes jump {
+    0%{
+        bottom:0%;
+        left:20%;
+    }
+    50%{
+       bottom: 50%;
+       left: 50%;
+    }
+    100%{
+         bottom: 0%;
+         left: 80%;
+    }
+}
